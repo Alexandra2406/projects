@@ -1,0 +1,2 @@
+module tema10 {
+}

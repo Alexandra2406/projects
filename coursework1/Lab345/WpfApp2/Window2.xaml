@@ -1,0 +1,37 @@
+﻿<Window x:Class="WpfApp2.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="" Height="435" Width="884">
+    <Grid Margin="0,0,0,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="/img4.jpg"/>
+        </Grid.Background>
+        <TextBox x:Name="Prem" HorizontalAlignment="Left" Margin="10,80,0,0" TextWrapping="Wrap" Text="Введіть премію у відсотках" VerticalAlignment="Top" Width="170" Height="30"  Background="SteelBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+        <TextBox x:Name="DSick" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Введіть дату захворювання" VerticalAlignment="Top" Width="170" Height="30"   Background="SteelBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White" />
+        <TextBox x:Name="Dcure" HorizontalAlignment="Left" Margin="10,45,0,0" TextWrapping="Wrap" Text="Введіть дату одужання" VerticalAlignment="Top" Width="170" Height="30"  Background="SteelBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+        <TextBox x:Name="Nadb" HorizontalAlignment="Left" Margin="10,115,0,0" TextWrapping="Wrap" Text="Введіть надбавку" VerticalAlignment="Top" Width="170" Height="30"   Background="SteelBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+        <DataGrid x:Name="dt1" Height="382" Margin="205,0,10,0" VerticalAlignment="Center" />
+        <Button Content="Видалити" HorizontalAlignment="Left" Margin="10,255,0,0" VerticalAlignment="Top" Height="30" Width="170" Click="Button_Click"   Background="SteelBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+        <TextBox x:Name ="IDField" HorizontalAlignment="Left" Margin="10,150,0,0" TextWrapping="Wrap" Text="Введіть ID" VerticalAlignment="Top" Width="170" Height="30"  Background="SteelBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+        <ComboBox x:Name="DelFrom" HorizontalAlignment="Left" Margin="10,185,0,0" VerticalAlignment="Top" Width="170" Height="30"  >
+            <ComboBoxItem Content="SickID"  Background="DodgerBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+            <ComboBoxItem Content="SalaryID"   Background="DodgerBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+        </ComboBox>
+        <Button x:Name ="Add" Content="Додати" HorizontalAlignment="Left" Margin="10,220,0,0" VerticalAlignment="Top" Width="170" Click="Add_Click" Height="30"  Background="SteelBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+        <Button Content="Повернутися" HorizontalAlignment="Left" Margin="10,360,0,0" VerticalAlignment="Top" Height="30" Width="170" Click="Return_Click"  Background="SteelBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+        <ComboBox HorizontalAlignment="Left" Margin="10,325,0,0" VerticalAlignment="Top" Width="170" Height="30">
+            <Button Content="Кінцева зарплата"  Click="FullSalary_Click"   Background="DodgerBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+            <Button Content="Оклад, стаж     "  Click="Salary_Click"  Background="DodgerBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+            <Button Content="Податки         "  Click="Tax_Click"  Background="DodgerBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+            <Button Content="Сімейний статус "  Click="MarSt_Click"  Background="DodgerBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+            <Button Content="Лікарняні       "  Click="Sick_Click"   Background="DodgerBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+            <Button Content="Премії          "  Click="Prem_Click"   Background="DodgerBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+        </ComboBox>
+        <Label Content="Оберіть данні" HorizontalAlignment="Left" Margin="10,290,0,0" VerticalAlignment="Top"  Width="170" Height="30"  Background="SteelBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+
+    </Grid>
+</Window>

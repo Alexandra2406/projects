@@ -1,0 +1,2 @@
+module ParallelStreamExample15 {
+}

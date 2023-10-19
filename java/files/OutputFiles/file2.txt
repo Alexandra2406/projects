@@ -1,0 +1,16 @@
+
+5 Juice 0.75 Metal
+17 Juice 0.75 Metal
+31 Juice 0.75 Plastic
+23 Water 0.75 Glass
+35 Water 0.75 Glass
+9 Water 0.75 Plastic
+1 Wine 0.75 Glass
+13 Wine 0.75 Glass
+43 Wine 0.75 Glass
+55 Wine 0.75 Glass
+27 Wine 0.75 Metal
+39 Wine 0.75 Metal
+47 Wine 0.75 Metal
+59 Wine 0.75 Metal
+51 Wine 0.75 Plastic

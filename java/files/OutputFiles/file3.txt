@@ -1,0 +1,16 @@
+
+52 Juice 1.0 Glass
+32 Water 1.0 Glass
+4 Wine 1.0 Glass
+16 Wine 1.0 Glass
+8 Juice 1.0 Metal
+20 Juice 1.0 Metal
+44 Juice 1.0 Metal
+56 Juice 1.0 Metal
+24 Wine 1.0 Metal
+36 Wine 1.0 Metal
+28 Juice 1.0 Plastic
+40 Juice 1.0 Plastic
+48 Juice 1.0 Plastic
+60 Juice 1.0 Plastic
+12 Water 1.0 Plastic

@@ -1,0 +1,8 @@
+C:\Users\Admin\source\repos\CardGame2\CardGame2\bin\Debug\CardGame2.exe.config
+C:\Users\Admin\source\repos\CardGame2\CardGame2\bin\Debug\CardGame2.exe
+C:\Users\Admin\source\repos\CardGame2\CardGame2\bin\Debug\CardGame2.pdb
+C:\Users\Admin\source\repos\CardGame2\CardGame2\obj\Debug\CardGame2.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\CardGame2\CardGame2\obj\Debug\CardGame2.csproj.SuggestedBindingRedirects.cache
+C:\Users\Admin\source\repos\CardGame2\CardGame2\obj\Debug\CardGame2.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\CardGame2\CardGame2\obj\Debug\CardGame2.exe
+C:\Users\Admin\source\repos\CardGame2\CardGame2\obj\Debug\CardGame2.pdb

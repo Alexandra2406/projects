@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp2.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp2"
+        mc:Ignorable="d"
+        Title="" Height="610" Width="870">
+    <Grid Margin="0,0,0,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="/img3.jpg"/>
+        </Grid.Background>
+        <Button Content="Списки працівників з розміром зарплати за місяць " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="370" Height="20" Click="Button_Click"  Background="DodgerBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+        <Button Content="Bідомості про працівників з лікарняним" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" Width="370" Height="20" Click="Button_Click_1"  Background="DodgerBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+        <Button Content="Загальна сума нарахувань, премій та надбавок за місяць" HorizontalAlignment="Left" Margin="390,10,0,0" VerticalAlignment="Top" Width="370" Height="20" Click="Button_Click_3"  Background="DodgerBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+        <Button Content="Виведення загальної суми перерахованих за місяць податків" HorizontalAlignment="Left" Margin="390,34,0,0" VerticalAlignment="Top" Width="370" Height="20" Click="Button_Click_2"  Background="DodgerBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+        <DataGrid x:Name="DataGrid1" HorizontalAlignment="Center" Margin="0,86,0,10" Width="850" />
+        <Button Content="Повернутися" HorizontalAlignment="Left" Margin="765,10,0,0" VerticalAlignment="Top" Height="44" Width="84" Click="Button_Click_4"   Background="DodgerBlue" BorderBrush="WhiteSmoke" FontSize="13" Foreground="White"/>
+        <Label x:Name="SumTax" Content="" HorizontalAlignment="Left" Margin="390,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.069,1.311"/>
+        <Label x:Name="SumTaxSal" Content="" HorizontalAlignment="Left" Margin="523,55,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.049,0.079"/>
+    </Grid>
+</Window>
