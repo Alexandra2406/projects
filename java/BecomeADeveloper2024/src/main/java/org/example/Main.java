@@ -20,7 +20,7 @@ public class Main {
         int currentLengthAscending = 1, currentLengthDescending = 1;
         int numberOfElements = 0, previousValue;
 
-        try (Scanner scanner = new Scanner(new File("C:\\Users\\Admin\\IdeaProjects\\BecomeADeveloper2024\\src\\10m.txt"))) {
+        try (Scanner scanner = new Scanner(new File("C:\\Users\\Admin\\projects\\java\\BecomeADeveloper2024\\src\\10m.txt"))) {
             previousValue = scanner.nextInt();
             data.add(previousValue);
             while (scanner.hasNextInt()) {
