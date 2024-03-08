@@ -1,0 +1,638 @@
+{
+  "id": "a8bd1342-1d9f-4003-af23-b9b6aa409494",
+  "version": "2.0",
+  "name": "Testing ToDo",
+  "url": "http://localhost:8081",
+  "tests": [{
+    "id": "a0951a59-9325-4c29-a534-639ce06702fe",
+    "name": "Task Update",
+    "commands": [{
+      "id": "4e339829-02f3-41b2-8694-6d0fb2d3dfd7",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c373848-5a9b-4b83-8fbe-a41a66639289",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "880x716",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3eab5841-7d37-46e1-a7ef-aa6cbd259a2e",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nick Green",
+      "targets": [
+        ["linkText=Nick Green", "linkText"],
+        ["css=tr:nth-child(1) > td:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Nick Green')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/todos/all/users/5')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nick Green')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "423c6b72-6bc4-442a-8ff4-5edfff10efe8",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mike's To-Do #1",
+      "targets": [
+        ["linkText=Mike's To-Do #1", "linkText"],
+        ["css=tr:nth-child(4) > td:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(@href, '/todos/7/tasks')]", "xpath:href"],
+        ["xpath=//tr[4]/td[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "30c5934d-7c27-4f50-8c80-7ea26283e73e",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > td:nth-child(6) > a",
+      "targets": [
+        ["css=tr:nth-child(3) > td:nth-child(6) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/tasks/7/update/todos/7')]", "xpath:href"],
+        ["xpath=//tr[3]/td[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c6c445e0-8ca1-4145-a891-7a6ca2665cc8",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42aaf1c8-52e2-449c-a8e4-acfe36e35f1b",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Task #3 edit"
+    }, {
+      "id": "8971e29f-7ffc-43e0-b826-9793d151ba6f",
+      "comment": "",
+      "command": "click",
+      "target": "id=priority",
+      "targets": [
+        ["id=priority", "id"],
+        ["name=priority", "name"],
+        ["css=#priority", "css:finder"],
+        ["xpath=//select[@id='priority']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c2ba077e-e8f8-4eed-967e-4ad18ab93c75",
+      "comment": "",
+      "command": "select",
+      "target": "id=priority",
+      "targets": [],
+      "value": "label=High"
+    }, {
+      "id": "21c5c84d-13a0-4f9c-be46-5e5b4173cd58",
+      "comment": "",
+      "command": "click",
+      "target": "css=#priority > option:nth-child(3)",
+      "targets": [
+        ["css=#priority > option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='HIGH']", "xpath:attributes"],
+        ["xpath=//select[@id='priority']/option[3]", "xpath:idRelative"],
+        ["xpath=//option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'High')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a45b3237-28ca-412f-8cd9-9b6ae950bcc9",
+      "comment": "",
+      "command": "click",
+      "target": "id=state",
+      "targets": [
+        ["id=state", "id"],
+        ["name=stateId", "name"],
+        ["css=#state", "css:finder"],
+        ["xpath=//select[@id='state']", "xpath:attributes"],
+        ["xpath=//div[4]/select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb626d7c-fce4-4595-85f6-50609ac2a8b3",
+      "comment": "",
+      "command": "select",
+      "target": "id=state",
+      "targets": [],
+      "value": "label=Verify"
+    }, {
+      "id": "c3a06981-9785-47d0-84ef-6231c1a6080d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#state > option:nth-child(3)",
+      "targets": [
+        ["css=#state > option:nth-child(3)", "css:finder"],
+        ["xpath=//option[@value='7']", "xpath:attributes"],
+        ["xpath=//select[@id='state']/option[3]", "xpath:idRelative"],
+        ["xpath=//div[4]/select/option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'Verify')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8a1efc83-0197-491e-b3b6-7b9452ebc984",
+      "comment": "",
+      "command": "click",
+      "target": "id=update",
+      "targets": [
+        ["id=update", "id"],
+        ["css=#update", "css:finder"],
+        ["xpath=//input[@id='update']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1e8ac50f-ffec-49f4-9f9b-9951a83ee0c1",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "937f8487-6e33-4ebf-8954-b2904ec35a18",
+    "name": "Task Delete",
+    "commands": [{
+      "id": "166b6f0b-702a-4256-b596-c6b8cdcb9ad1",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "61efdfb6-d48e-4db1-891b-dd58384cd82c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "880x716",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "416b6473-e4e6-4a28-8a35-91157b8f6813",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nick Green",
+      "targets": [
+        ["linkText=Nick Green", "linkText"],
+        ["css=tr:nth-child(1) > td:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Nick Green')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/todos/all/users/5')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nick Green')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d41fe4a-92cd-4d30-823c-daa658571f18",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Mike's To-Do #1",
+      "targets": [
+        ["linkText=Mike's To-Do #1", "linkText"],
+        ["css=tr:nth-child(4) > td:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(@href, '/todos/7/tasks')]", "xpath:href"],
+        ["xpath=//tr[4]/td[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2aecd69-ef80-4347-976f-6a1fd066e0fd",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remove",
+      "targets": [
+        ["linkText=Remove", "linkText"],
+        ["css=tr:nth-child(2) > td:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Remove')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/tasks/6/delete/todos/7')]", "xpath:href"],
+        ["xpath=//td[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remove')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "39c47b40-7ea6-4507-a6d5-02fe4a637aa2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6484e7ea-e4db-4574-aa25-63154adf38e9",
+    "name": "ToDo Create",
+    "commands": [{
+      "id": "c1884527-1eca-4b3d-8292-1ebc99718d8d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "672c81ca-77e3-47dc-ad76-0d9b6002e071",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "880x716",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ecf02d5d-9bb3-4516-b72c-b66077b94491",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nick Green",
+      "targets": [
+        ["linkText=Nick Green", "linkText"],
+        ["css=tr:nth-child(1) > td:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Nick Green')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/todos/all/users/5')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nick Green')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8e9d39c1-d57a-4248-ab59-edcdb53c5dd6",
+      "comment": "",
+      "command": "click",
+      "target": "id=create",
+      "targets": [
+        ["id=create", "id"],
+        ["css=#create", "css:finder"],
+        ["xpath=//input[@id='create']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b05f7622-ad32-4d03-9b80-030eae89d5db",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=title", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05f3c4ae-e23d-4906-9a4d-d4862eaf7ed3",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=title", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "New ToDo List"
+    }, {
+      "id": "c7f79ee5-bf20-4ba0-811e-ff7a1feb7fe6",
+      "comment": "",
+      "command": "click",
+      "target": "id=create",
+      "targets": [
+        ["id=create", "id"],
+        ["css=#create", "css:finder"],
+        ["xpath=//input[@id='create']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd24cbf7-29bf-4133-b3c5-4d2a36838b3f",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "a48e8cf7-36c5-40a9-ab59-5a3baf4aca23",
+    "name": "ToDo Update",
+    "commands": [{
+      "id": "185f37c0-bda6-4cd7-8725-5d1f9af7c057",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78e11854-52dd-476c-8a68-047a3b094e39",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "880x716",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d87c0636-970a-44da-8efb-1066aa5e742f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nick Green",
+      "targets": [
+        ["linkText=Nick Green", "linkText"],
+        ["css=tr:nth-child(1) > td:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Nick Green')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/todos/all/users/5')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nick Green')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a5bec2a-f22e-4d2f-9098-8714c9219251",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(3) > td:nth-child(6) > a",
+      "targets": [
+        ["css=tr:nth-child(3) > td:nth-child(6) > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Edit')])[2]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/todos/12/update/users/6')]", "xpath:href"],
+        ["xpath=//tr[3]/td[6]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "551d8bb5-2cfb-4357-b6aa-d7ba8915290b",
+      "comment": "",
+      "command": "click",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=title", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f350ae9a-130c-44b2-b7a1-53b3f24f1833",
+      "comment": "",
+      "command": "type",
+      "target": "id=title",
+      "targets": [
+        ["id=title", "id"],
+        ["name=title", "name"],
+        ["css=#title", "css:finder"],
+        ["xpath=//input[@id='title']", "xpath:attributes"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Nora's To-Do #1 edit"
+    }, {
+      "id": "bb7b90c8-31bf-47da-951d-dbd0f2b49c50",
+      "comment": "",
+      "command": "click",
+      "target": "id=update",
+      "targets": [
+        ["id=update", "id"],
+        ["css=#update", "css:finder"],
+        ["xpath=//input[@id='update']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "129c2fe1-36ce-4c14-9682-ffb2f96324e2",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "4c2804aa-4aee-402a-978b-ccc0a2e5e86c",
+    "name": "ToDo Delete",
+    "commands": [{
+      "id": "0f1a1fa1-dce1-4107-a328-f350a45a4a51",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "cfa0134b-b17c-41e6-acc4-727e0bc438f7",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "880x716",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0cb613a6-7649-4c45-aeb0-32bc8c5efe6f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nick Green",
+      "targets": [
+        ["linkText=Nick Green", "linkText"],
+        ["css=tr:nth-child(1) > td:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Nick Green')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/todos/all/users/5')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nick Green')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "09c78a54-8e9b-42c7-a976-01ea1c3d9338",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Remove",
+      "targets": [
+        ["linkText=Remove", "linkText"],
+        ["css=tr:nth-child(2) > td:nth-child(7) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Remove')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/todos/10/delete/users/5')]", "xpath:href"],
+        ["xpath=//td[7]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Remove')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "06b08d69-19dd-4226-92d0-92902dc1095d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "30a867d2-d390-4e87-917e-23ee00052c08",
+    "name": "User Create",
+    "commands": []
+  }, {
+    "id": "188d44ab-8d5c-4d51-90f0-dcb5ac0358cd",
+    "name": "User Update",
+    "commands": []
+  }, {
+    "id": "55c6d20e-1054-4b95-a449-97e875952370",
+    "name": "User Delete",
+    "commands": []
+  }, {
+    "id": "bf5cff57-c6d2-4d27-a339-4a7f4a9bce96",
+    "name": "Task Create",
+    "commands": [{
+      "id": "932380b4-702b-4220-b23e-f6e967cb4291",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b5691929-eb54-479b-b765-71fa4da797a2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "880x716",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "555cb035-ac10-41eb-bf53-4864b46a6520",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nick Green",
+      "targets": [
+        ["linkText=Nick Green", "linkText"],
+        ["css=tr:nth-child(1) > td:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Nick Green')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/todos/all/users/5')]", "xpath:href"],
+        ["xpath=//td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Nick Green')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "218c9dd0-ceeb-4633-93d4-15d5d019fa44",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Nick's To-Do #2",
+      "targets": [
+        ["linkText=Nick's To-Do #2", "linkText"],
+        ["css=tr:nth-child(5) > td:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(@href, '/todos/11/tasks')]", "xpath:href"],
+        ["xpath=//tr[5]/td[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d2575af-cb1e-4a76-9123-3e2ddd23e8dc",
+      "comment": "",
+      "command": "click",
+      "target": "id=create",
+      "targets": [
+        ["id=create", "id"],
+        ["css=#create", "css:finder"],
+        ["xpath=//input[@id='create']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f880aa53-ce16-4ce4-9b1a-d1ac917b9c7e",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8a9b3f0-e0cc-4f06-b8e5-ba6e909d03b1",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "New Task"
+    }, {
+      "id": "c904558e-7c44-439e-a6e6-1fb7e2974faf",
+      "comment": "",
+      "command": "click",
+      "target": "id=create",
+      "targets": [
+        ["id=create", "id"],
+        ["css=#create", "css:finder"],
+        ["xpath=//input[@id='create']", "xpath:attributes"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98bdb857-22aa-4569-9afd-56bf8f467201",
+      "comment": "",
+      "command": "click",
+      "target": "id=users",
+      "targets": [
+        ["id=users", "id"],
+        ["name=user_id", "name"],
+        ["css=#users", "css:finder"],
+        ["xpath=//select[@id='users']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a1876e8-0600-4c0c-8a8b-7f14ae1c5dd8",
+      "comment": "",
+      "command": "select",
+      "target": "id=users",
+      "targets": [],
+      "value": "label=Nora White"
+    }, {
+      "id": "43baf81f-4661-40ee-9ec1-11de6dabeb96",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(2)",
+      "targets": [
+        ["css=option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='6']", "xpath:attributes"],
+        ["xpath=//select[@id='users']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'Nora White')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2eac8cd5-1685-4465-8d89-24beff777b6d",
+      "comment": "",
+      "command": "click",
+      "target": "id=add",
+      "targets": [
+        ["id=add", "id"],
+        ["css=#add", "css:finder"],
+        ["xpath=//input[@id='add']", "xpath:attributes"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "735e9a85-9a03-486b-bf13-254cf99ef9b6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "17b6ddb9-0341-47ea-bd8a-413a72dca774",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://localhost:8081/"],
+  "plugins": []
+}
